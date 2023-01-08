@@ -1,0 +1,9 @@
+setx POSTGRES_USERNAME postgres
+setx POSTGRES_PASSWORD abcd1234
+setx POSTGRES_HOST mypostgres-database-1.c5szli4s4qq9.us-east-1.rds.amazonaws.com
+setx POSTGRES_DB postgres
+setx AWS_BUCKET udagram-esiea-2463
+setx AWS_REGION us-east-1
+setx AWS_PROFILE default
+setx JWT_SECRET hello
+setx URL http://localhost:8100

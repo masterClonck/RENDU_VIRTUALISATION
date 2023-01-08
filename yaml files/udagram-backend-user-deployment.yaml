@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: udagram-backend-user-deployment
+  labels:
+    app: udagram-backend_user
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: udagram-backend-user
+  template:
+    metadata:
+      labels:
+        app: udagram-backend-user
+    spec:
+      containers:
+      - name: udagram-backend-user
+        image: clonck/esiea_projets:udagram-api-user
+        ports:
+        - containerPort: 80
